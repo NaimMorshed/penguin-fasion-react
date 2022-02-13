@@ -1,0 +1,33 @@
+nav {
+  background-color: #f8d7df;
+  width: 100%;
+  padding: 15px 50px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+nav > div {
+  width: 100%;
+}
+
+.start {
+  background-color: blue;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.middle {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+}
+
+.end {
+  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav img {
+  width: 320px;
+}

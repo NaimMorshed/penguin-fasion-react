@@ -1,12 +1,16 @@
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>You are seing from master branch</h1>  
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
