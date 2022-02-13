@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello this is Naim Branch</h1>
+        <h1>This branch is merged with master</h1>
       </header>
     </div>
   );
