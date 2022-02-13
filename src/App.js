@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>This branch is merged with master</h1>
+        <h1>You are seing from master branch</h1>
       </header>
     </div>
   );
