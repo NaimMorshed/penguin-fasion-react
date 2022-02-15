@@ -1,4 +1,3 @@
-import "./Navbar.css";
 import logo from "../../assets/icons/logo.png";
 import { searchIcon, bookmart, cart } from '../../assets/svg/icons';
 
