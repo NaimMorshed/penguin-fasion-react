@@ -10,13 +10,12 @@ const dummyData = {
 };
 
 const tailwind = {
-  main: "w-full py-6 px-16 grid grid-cols-[50%_50%] bg-global min-h-[80vh]",
+  main: "w-full py-6 px-16 bg-global min-h-[80vh]",
   txtHeader: "text-5xl font-bold font-primary text-primary",
   btn: "px-8 py-5 rounded-[30px] shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] font-bold text-xl bg-secondary text-primary",
   txtCardHeader: "text-xl font-semibold tracking-tight text-gray-900 dark:text-white",
   btnCard: "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800",
-  starCard: "",
-  priceCard: "",
+  cardSection: 'mt-6',
   cardBody: "px-5 pb-5",
   cardRatingSec: "flex items-center mt-2.5 mb-5",
   cardRating: "bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3",
@@ -39,7 +38,7 @@ export default function WomenJacket() {
     <main className={tailwind.main}>
       <h1 className={tailwind.txtHeader}>Women Jacket</h1>
       {/* CARD */}
-      <section>
+      <section className={tailwind.cardSection}>
         <div className={tailwind.cardParent}>
           <img
             className={tailwind.imgCard}
