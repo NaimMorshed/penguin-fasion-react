@@ -15,12 +15,9 @@ const tailwind = {
   icons: "mx-2 hover:animate-pulse cursor-pointer",
   cart: "mx-2 relative cursor-pointer hover:animate-pulse",
   qty: "absolute top-1 left-6 font-bold text-white animate-bounce bg-red-600 px-1.5 rounded-full text-sm",
-  loginBtn:
-    "ml-9 bg-secondary px-3.5 text-white py-1.5 rounded-3xl animate-pulse hover:animate-none",
-  anchorTxt:
-    "text-secondary mx-3  font-bold text-lg cursor-pointer hover:border-b-4 border-[#0d1137] hover:animate-pulse duration-200 ease-in-out",
-  productTxt:
-    "text-secondary mx-3  font-bold text-lg cursor-pointer hover:border-b-4 border-[#0d1137] hover:animate-pulse duration-200 ease-in-out flex justify-items-center items-center",
+  loginBtn: "ml-9 bg-secondary px-3.5 text-white py-1.5 rounded-3xl animate-pulse hover:animate-none",
+  anchorTxt: "text-secondary mx-3  font-bold text-lg cursor-pointer hover:border-b-4 border-[#0d1137] hover:animate-pulse duration-200 ease-in-out",
+  productTxt: "text-secondary mx-3  font-bold text-lg cursor-pointer hover:border-b-4 border-[#0d1137] hover:animate-pulse duration-200 ease-in-out flex justify-items-center items-center",
 };
 
 export default function Navbar() {
