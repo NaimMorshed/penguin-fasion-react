@@ -4,9 +4,9 @@ const tailwind = {
   main: "w-full py-6 px-16 grid grid-cols-[50%_50%] bg-global min-h-[80vh]",
   secLeft: "m-[auto_0] grid grid-rows-3",
   secRight: "m-auto",
-  txtUp: "text-[80px] font-bold font-primary text-primary",
-  txtDown: "text-7xl font-bold font-primary text-secondary",
-  txtSmall: "",
+  txtUp: "text-[80px] font-bold font-primary text-primary select-none",
+  txtDown: "text-7xl font-bold font-primary text-secondary select-none",
+  txtSmall: "select-none",
   btnSec: "m-0",
   btn: "px-8 py-5 rounded-[30px] shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] font-bold text-xl bg-secondary text-primary",
 };
