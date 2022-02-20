@@ -34,3 +34,33 @@ export const womenJacket = [
         discount: 0,
     }
 ];
+
+export const menJacket = [
+    {
+        img: jacket4,
+        text: "Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        star: 5,
+        rating: "5.0",
+        price: 599,
+        sale: true,
+        discount: 250,
+    },
+    {
+        img: jacket5,
+        text: "Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        star: 4,
+        rating: "4.2",
+        price: 489,
+        sale: false,
+        discount: 0,
+    },
+    {
+        img: jacket6,
+        text: "Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
+        star: 5,
+        rating: "5.0",
+        price: 350,
+        sale: true,
+        discount: 100,
+    }
+];

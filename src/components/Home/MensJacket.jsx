@@ -1,4 +1,4 @@
-import { womenJacket } from "../../assets/data/dummyData";
+import { menJacket } from "../../assets/data/dummyData";
 import Card from "./Card";
 
 const tailwind = {
@@ -8,13 +8,13 @@ const tailwind = {
   cardSection: "mt-6 grid grid-cols-3",
 };
 
-export default function WomenJacket() {
+export default function MensJacket() {
   return (
     <main className={tailwind.main}>
-      <h1 className={tailwind.txtHeader}>Women Jacket</h1>
+      <h1 className={tailwind.txtHeader}>Mens Jacket</h1>
       {/* CARD */}
       <section className={tailwind.cardSection}>
-        {womenJacket.map((data, index) => (
+        {menJacket.map((data, index) => (
           <Card props={data} key={index} />
         ))}
       </section>
