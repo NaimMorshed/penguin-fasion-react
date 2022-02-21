@@ -1,5 +1,7 @@
 import { star, unStar } from '../../assets/svg/icons';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserContext } from '../../App';
 
 const tailwind = {
     txtCardHeader: "text-xl font-semibold tracking-tight text-secondary cursor-pointer",
@@ -17,6 +19,8 @@ const tailwind = {
 };
 
 export default function Card({ props }) {
+    const [cartItems, setCartItems] = useContext(UserContext);
+
     const starLoop = () => {
         let arr = [];
         for (let index = 0; index < props.star; index++) {
@@ -32,6 +36,12 @@ export default function Card({ props }) {
         }
         return arr;
     };
+
+    const setItems = () => {
+        const newData = [ ...cartItems ];
+        newData.push(props);
+        setCartItems(newData);
+    }
 
     return (
         <div className={tailwind.cardParent}>
@@ -50,7 +60,6 @@ export default function Card({ props }) {
                 <Link to="/productView">
                     <h3 className={tailwind.txtCardHeader}>{props.text}</h3>
                 </Link>
-                {/* <h3 className={tailwind.txtCardHeader}>{props.text}</h3> */}
                 <div className={tailwind.cardRatingSec}>
                     {starLoop()}
                     {nonStarLoop()}
@@ -65,7 +74,7 @@ export default function Card({ props }) {
                         </div>
                         : <span className={tailwind.cardPrice}>${props.price}</span>
                     }
-                    <button className={tailwind.btnCard}>ADD TO CART</button>
+                    <button onClick={setItems} className={tailwind.btnCard}>ADD TO CART</button>
                 </div>
             </div>
         </div>

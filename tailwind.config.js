@@ -15,7 +15,7 @@ module.exports = {
       },
       fontFamily: {
         'primary': 'Bebas Neue'
-      }
+      },
     },
   },
   plugins: [],
