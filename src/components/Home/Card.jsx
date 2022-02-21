@@ -47,7 +47,7 @@ export default function Card({ props }) {
         <div className={tailwind.cardParent}>
             { props.sale && <span className={tailwind.sale}>SALE</span> }
             <div className={tailwind.imgContainer}>
-                <Link to={"/productView"}>
+                <Link to={`/productView/${props.id}`}>
                     <img
                         className={tailwind.imgCard}
                         src={props.img}
