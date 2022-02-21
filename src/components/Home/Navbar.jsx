@@ -1,4 +1,6 @@
 import logo from "../../assets/icons/logo2.png";
+import { useContext } from "react";
+import { UserContext } from "../../App";
 import {
   searchIcon,
   bookmart,
@@ -21,6 +23,7 @@ const tailwind = {
 };
 
 export default function Navbar() {
+  const [cartItems] = useContext(UserContext);
   return (
     <nav className={tailwind.nav}>
       <div className={tailwind.left}>
@@ -40,7 +43,9 @@ export default function Navbar() {
           <div className={tailwind.icons}>{bookmart}</div>
           <div className={tailwind.cart}>
             {cart}
-            <span className={tailwind.qty}>2</span>
+            {cartItems.length > 0 && (
+              <span className={tailwind.qty}>{cartItems.length}</span>
+            )}
           </div>
           <div>
             <button className={tailwind.loginBtn}>Login</button>
